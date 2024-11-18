@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.slick-dots{
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+}
+.slick-dots li{
+    display: inline-block;
+    background-color: red;
+    margin: 0 5px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+.slick-dots li button{
+    height: 10px;
+    width: 10px;
+    color: transparent;
+    margin-top: 5px;
+    margin-left: 4px;
+    border: none;
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 0;
+}
+.slick-dots li.slick-active button{
+    opacity: 1;
+}
